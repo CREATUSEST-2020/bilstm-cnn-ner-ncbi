@@ -44,6 +44,7 @@ if __name__ == '__main__':
 
     parser.add_argument("--word_emb_dim", default=300, type=int, help="Word embedding size")
     parser.add_argument("--char_emb_dim", default=30, type=int, help="Character embedding size")
+    parser.add_argument("--additional_emb_dim", default=50, type=int, help="Additional embedding size")
     parser.add_argument("--final_char_dim", default=50, type=int, help="Dimension of character cnn output")
     parser.add_argument("--hidden_dim", default=350, type=int, help="Dimension of BiLSTM output")
 

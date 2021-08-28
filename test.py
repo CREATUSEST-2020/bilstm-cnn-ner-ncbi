@@ -74,7 +74,8 @@ class Inference(object):
                 inputs = {'word_ids': batch[0],
                           'char_ids': batch[1],
                           'mask': batch[2],
-                          'label_ids': batch[3]}
+                          'additional' : batch[3],
+                          'label_ids': batch[4]}
                 outputs = self.model(**inputs)
                 tmp_eval_loss, logits = outputs[:2]
                 eval_loss += tmp_eval_loss.mean().item()

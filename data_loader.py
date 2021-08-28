@@ -7,7 +7,7 @@ import numpy as np
 
 import torch
 from torch.utils.data import TensorDataset
-from utils import get_labels, load_vocab, load_label_vocab
+from utils import get_labels, load_vocab, load_label_vocab, cap_features
 
 logger = logging.getLogger(__name__)
 
@@ -34,12 +34,13 @@ class InputExample(object):
 class InputFeatures(object):
     """A single set of features of data."""
 
-    def __init__(self, word_ids, char_ids, mask, label_ids):
+    def __init__(self, word_ids, char_ids, mask, label_ids, additional_ids):
         self.word_ids = word_ids
         self.char_ids = char_ids
         self.mask = mask
         self.label_ids = label_ids
-
+        self.additional_ids = additional_ids
+        
     def __repr__(self):
         return str(self.to_json_string())
 
@@ -167,6 +168,7 @@ def convert_examples_to_features(examples,
         word_ids = []
         char_ids = []
         label_ids = []
+        additional_ids = []
 
         for word in example.words:
             word_ids.append(word_vocab.get(word, word_unk_idx))
@@ -178,6 +180,7 @@ def convert_examples_to_features(examples,
             ch_in_word = ch_in_word + ([char_pad_idx] * char_padding_length)
             ch_in_word = ch_in_word[:max_word_len]
             char_ids.append(ch_in_word)
+            additional_ids.append(cap_features(word))
 
         for label in example.labels:
             label_ids.append(label_vocab.get(label, label_unk_idx))
@@ -187,12 +190,14 @@ def convert_examples_to_features(examples,
         # Padding for word and label
         word_padding_length = max_seq_len - len(word_ids)
         word_ids = word_ids + ([word_pad_idx] * word_padding_length)
+        additional_ids = additional_ids + ([word_pad_idx] * word_padding_length)
         label_ids = label_ids + ([label_pad_idx] * word_padding_length)
         mask = mask + ([0] * word_padding_length)
 
         word_ids = word_ids[:max_seq_len]
         char_ids = char_ids[:max_seq_len]
         label_ids = label_ids[:max_seq_len]
+        additional_ids = additional_ids[:max_seq_len]
         mask = mask[:max_seq_len]
 
         # Additional padding for char if word_padding_length > 0
@@ -211,6 +216,7 @@ def convert_examples_to_features(examples,
             logger.info("guid: %s" % example.guid)
             logger.info("words: %s" % " ".join([str(x) for x in example.words]))
             logger.info("word_ids: %s" % " ".join([str(x) for x in word_ids]))
+            logger.info("additional_ids: %s" % " ".join([str(x) for x in additional_ids]))
             logger.info("char_ids[0]: %s" % " ".join([str(x) for x in char_ids[0]]))
             logger.info("mask: %s" % " ".join([str(x) for x in mask]))
             logger.info("label_ids: %s" % " ".join([str(x) for x in label_ids]))
@@ -218,6 +224,7 @@ def convert_examples_to_features(examples,
         features.append(
             InputFeatures(word_ids=word_ids,
                           char_ids=char_ids,
+                          additional_ids = additional_ids,
                           mask=mask,
                           label_ids=label_ids
                           ))
@@ -254,11 +261,13 @@ def load_examples(args, mode):
     all_char_ids = torch.tensor([f.char_ids for f in features], dtype=torch.long)
     all_mask = torch.tensor([f.mask for f in features], dtype=torch.long)
     all_label_ids = torch.tensor([f.label_ids for f in features], dtype=torch.long)
+    all_additional_ids = torch.tensor([f.additional_ids for f in features], dtype=torch.long)
 
     logger.info("all_word_ids.size(): {}".format(all_word_ids.size()))
+    logger.info("all_additional_ids.size(): {}".format(all_additional_ids.size()))
     logger.info("all_char_ids.size(): {}".format(all_char_ids.size()))
     logger.info("all_mask.size(): {}".format(all_mask.size()))
     logger.info("all_label_ids.size(): {}".format(all_label_ids.size()))
 
-    dataset = TensorDataset(all_word_ids, all_char_ids, all_mask, all_label_ids)
+    dataset = TensorDataset(all_word_ids, all_char_ids, all_mask,all_additional_ids, all_label_ids)
     return dataset

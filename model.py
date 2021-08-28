@@ -1,6 +1,5 @@
 import torch
 import torch.nn as nn
-#from torchcrf import CRF
 
 from utils import get_labels
 
@@ -77,17 +76,18 @@ class BiLSTM_CNN(nn.Module):
         else:
             self.word_emb = nn.Embedding(args.word_vocab_size, args.word_emb_dim, padding_idx=0)
             nn.init.uniform_(self.word_emb.weight, -0.25, 0.25)
+        self.additional_embeds = nn.Embedding(5, args.additional_emb_dim)
+        torch.nn.init.xavier_uniform_(self.additional_embeds.weight)
 
-        self.bi_lstm = nn.LSTM(input_size=args.word_emb_dim + args.final_char_dim,
+        self.bi_lstm = nn.LSTM(input_size=args.word_emb_dim + args.final_char_dim+ args.additional_emb_dim,
                                hidden_size=args.hidden_dim // 2,  # Bidirectional will double the hidden_size
                                bidirectional=True,
                                batch_first=True)
 
         self.output_linear = nn.Linear(args.hidden_dim, len(get_labels(args)))
 
-        #self.crf = CRF(num_tags=len(get_labels(args)), batch_first=True)
 
-    def forward(self, word_ids, char_ids, mask, label_ids):
+    def forward(self, word_ids, char_ids, mask, additional, label_ids):
         """
         :param word_ids: (batch_size, max_seq_len)
         :param char_ids: (batch_size, max_seq_len, max_word_len)
@@ -97,8 +97,8 @@ class BiLSTM_CNN(nn.Module):
         """
         w_emb = self.word_emb(word_ids)
         c_emb = self.char_cnn(char_ids)
-
-        w_c_emb = torch.cat([w_emb, c_emb], dim=-1)
+        a_emb = self.additional_embeds(additional)
+        w_c_emb = torch.cat([w_emb, c_emb, a_emb], dim=-1)
 
         lstm_output, _ = self.bi_lstm(w_c_emb, None)
 

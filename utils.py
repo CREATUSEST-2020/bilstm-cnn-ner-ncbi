@@ -100,7 +100,23 @@ def build_vocab(args):
     logger.info("args.word_vocab_size: {}".format(args.word_vocab_size))
     logger.info("args.char_vocab_size: {}".format(args.char_vocab_size))
 
-
+def cap_features(s):
+    """
+    Capitalization feature:
+    1 = low caps
+    2 = all caps
+    3 = first letter caps
+    4 = one capital (not first letter)
+    """
+    if s.lower() == s:
+        return 1
+    elif s.upper() == s:
+        return 2
+    elif s[0].upper() == s[0]:
+        return 3
+    else:
+        return 4
+    
 def load_vocab(args):
     word_vocab_path = os.path.join(args.vocab_dir, "word_vocab")
     char_vocab_path = os.path.join(args.vocab_dir, "char_vocab")
