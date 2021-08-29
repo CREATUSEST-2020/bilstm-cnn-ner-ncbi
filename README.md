@@ -53,7 +53,7 @@ $ python3 main.py --eval
 
 ## Results
 
-Results after 15 epochs
+Results after 10 epochs
 
 |                            | F1 (%) |
 | -------------------------- | ----------- |
