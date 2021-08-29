@@ -51,6 +51,16 @@ $ python3 main.py --eval
 - **Evaluation prediction result** will be saved in `preds` dir
 - **Model Hyperparameters** can be altered in main.py
 
+
+## Visualizations
+
+Used Tensorboard with PyTorch for plotting Training and Validation Losses
+
+```bash
+$ tensorboard --logdir runs
+```
+![](images/tensorboard_visualize.png)
+
 ## Results
 
 Results after 10 epochs

@@ -7,12 +7,14 @@ import numpy as np
 import torch
 from torch.utils.data import DataLoader, RandomSampler, SequentialSampler
 from torch.optim import Adam,SGD
+from torch.utils.tensorboard import SummaryWriter
 
 from data_loader import load_word_matrix
 from utils import set_seed, load_vocab, compute_metrics, show_report, get_labels, get_test_texts, adjust_learning_rate
 from model import BiLSTM_CNN
 import matplotlib.pyplot as plt
 import seaborn as sns
+writer = SummaryWriter()
 
 sns.set(style='darkgrid')
 sns.set(font_scale=1.5)
@@ -105,16 +107,16 @@ class Trainer(object):
             tr_loss_list.append(tr_loss / global_step)
             l_r=self.args.learning_rate / (1 + 0.05 * global_step )
             adjust_learning_rate(optimizer, lr=l_r, global_step = global_step)
-            
+            writer.add_scalar("Training Loss",tr_loss / global_step,global_step)
+            writer.add_scalar("Validation Loss",eval_l,global_step)
         plt.plot(tr_loss_list, 'b-o', label="training loss")
         plt.plot(eval_loss_list, 'r-o', label="validation loss")
         plt.title("Learning curve")
         plt.xlabel("Epoch")
         plt.ylabel("Loss")
         plt.legend()
-
+        writer.close()
         plt.savefig("loss.png")
-
         return global_step, tr_loss / global_step
 
     def evaluate(self, mode, step):
@@ -174,7 +176,6 @@ class Trainer(object):
         results = {
             "loss": eval_loss
         }
-        
         slot_label_map = {i: label for i, label in enumerate(self.label_lst)}
         out_label_list = [[] for _ in range(out_label_ids.shape[0])]
         preds_list = [[] for _ in range(out_label_ids.shape[0])]
@@ -194,7 +195,7 @@ class Trainer(object):
                     f.write("\n")
         result = compute_metrics(out_label_list, preds_list)
         results.update(result)
-
+        
         logger.info("***** Eval results *****")
         for key in sorted(results.keys()):
             logger.info("  %s = %s", key, str(results[key]))

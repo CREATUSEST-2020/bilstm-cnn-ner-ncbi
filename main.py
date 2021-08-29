@@ -5,6 +5,7 @@ from utils import init_logger, build_vocab
 from data_loader import load_examples
 
 
+
 def main(args):
     init_logger()
     build_vocab(args)
@@ -55,7 +56,7 @@ if __name__ == '__main__':
     parser.add_argument("--train_batch_size", default=64, type=int, help="Batch size for training")
     parser.add_argument("--eval_batch_size", default=128, type=int, help="Batch size for evaluation")
     parser.add_argument("--learning_rate", default=0.015, type=float, help="The initial learning rate")
-    parser.add_argument("--num_train_epochs", default=15, type=float, help="Total number of training epochs to perform.")
+    parser.add_argument("--num_train_epochs", default=10, type=float, help="Total number of training epochs to perform.")
     parser.add_argument('--save_steps', type=int, default=120, help="Save checkpoint every X updates steps.")
 
     parser.add_argument("--train", action="store_true", help="run training.")
