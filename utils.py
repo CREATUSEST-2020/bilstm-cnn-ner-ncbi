@@ -202,10 +202,12 @@ def show_report(labels, preds):
     return classification_report(labels, preds, suffix=True)
 
 
-def adjust_learning_rate(optimizer, lr):
+def adjust_learning_rate(optimizer, lr, global_step):
     """
     shrink learning rate for pytorch
     """
-    for param_group in optimizer.param_groups:
-        param_group["lr"] = lr
+    min_lrate = 0.000005
+    if lr >= min_lrate and global_step >=5:
+        for param_group in optimizer.param_groups:
+            param_group["lr"] = lr
 

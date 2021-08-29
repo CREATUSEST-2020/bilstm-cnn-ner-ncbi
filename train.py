@@ -104,7 +104,7 @@ class Trainer(object):
             eval_loss_list.append(eval_l)
             tr_loss_list.append(tr_loss / global_step)
             l_r=self.args.learning_rate / (1 + 0.05 * global_step )
-            adjust_learning_rate(optimizer, lr=l_r)
+            adjust_learning_rate(optimizer, lr=l_r, global_step = global_step)
             
         plt.plot(tr_loss_list, 'b-o', label="training loss")
         plt.plot(eval_loss_list, 'r-o', label="validation loss")
