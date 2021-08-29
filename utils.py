@@ -200,3 +200,12 @@ def f1_pre_rec(labels, preds):
 
 def show_report(labels, preds):
     return classification_report(labels, preds, suffix=True)
+
+
+def adjust_learning_rate(optimizer, lr):
+    """
+    shrink learning rate for pytorch
+    """
+    for param_group in optimizer.param_groups:
+        param_group["lr"] = lr
+

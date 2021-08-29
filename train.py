@@ -6,12 +6,17 @@ from tqdm import tqdm, trange
 import numpy as np
 import torch
 from torch.utils.data import DataLoader, RandomSampler, SequentialSampler
-from torch.optim import Adam
+from torch.optim import Adam,SGD
 
 from data_loader import load_word_matrix
-from utils import set_seed, load_vocab, compute_metrics, show_report, get_labels, get_test_texts
+from utils import set_seed, load_vocab, compute_metrics, show_report, get_labels, get_test_texts, adjust_learning_rate
 from model import BiLSTM_CNN
+import matplotlib.pyplot as plt
+import seaborn as sns
 
+sns.set(style='darkgrid')
+sns.set(font_scale=1.5)
+plt.rcParams["figure.figsize"] = (12,6)
 logger = logging.getLogger(__name__)
 
 
@@ -62,6 +67,8 @@ class Trainer(object):
 
         global_step = 0
         tr_loss = 0.0
+        tr_loss_list = []
+        eval_loss_list = []
         self.model.zero_grad()
 
         train_iterator = trange(int(self.args.num_train_epochs), desc="Epoch")
@@ -88,10 +95,25 @@ class Trainer(object):
                 optimizer.step()
                 self.model.zero_grad()
                 global_step += 1
+            
 
                 if self.args.save_steps > 0 and global_step % self.args.save_steps == 0:
-                    self.evaluate("eval", global_step)
                     self.save_model()
+
+            eval_l = self.evaluate("eval", global_step)['loss']
+            eval_loss_list.append(eval_l)
+            tr_loss_list.append(tr_loss / global_step)
+            l_r=self.args.learning_rate / (1 + 0.05 * global_step )
+            adjust_learning_rate(optimizer, lr=l_r)
+            
+        plt.plot(tr_loss_list, 'b-o', label="training loss")
+        plt.plot(eval_loss_list, 'r-o', label="validation loss")
+        plt.title("Learning curve")
+        plt.xlabel("Epoch")
+        plt.ylabel("Loss")
+        plt.legend()
+
+        plt.savefig("loss.png")
 
         return global_step, tr_loss / global_step
 
@@ -152,7 +174,7 @@ class Trainer(object):
         results = {
             "loss": eval_loss
         }
-
+        
         slot_label_map = {i: label for i, label in enumerate(self.label_lst)}
         out_label_list = [[] for _ in range(out_label_ids.shape[0])]
         preds_list = [[] for _ in range(out_label_ids.shape[0])]

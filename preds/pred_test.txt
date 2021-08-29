@@ -56,7 +56,7 @@ of O O
 cancer B-Disease B-Disease
 , O O
 especially O O
-lymphoid B-Disease O
+lymphoid B-Disease B-Disease
 neoplasias I-Disease I-Disease
 , O O
 is O O
@@ -85,7 +85,7 @@ from O O
 patients O O
 with O O
 sporadic B-Disease B-Disease
-T I-Disease B-Disease
+T I-Disease I-Disease
 - I-Disease I-Disease
 cell I-Disease I-Disease
 prolymphocytic I-Disease I-Disease
@@ -98,17 +98,17 @@ PLL I-Disease I-Disease
 , O O
 a O O
 rare O O
-clonal B-Disease O
-malignancy I-Disease O
+clonal B-Disease B-Disease
+malignancy I-Disease I-Disease
 with O O
 similarities O O
 to O O
 a O O
 mature B-Disease O
 T I-Disease B-Disease
-- I-Disease O
-cell I-Disease O
-leukaemia I-Disease B-Disease
+- I-Disease I-Disease
+cell I-Disease I-Disease
+leukaemia I-Disease I-Disease
 seen O O
 in O O
 A B-Disease B-Disease
@@ -214,7 +214,7 @@ a O O
 previously O O
 reported O O
 A B-Disease B-Disease
-- I-Disease I-Disease
+- I-Disease O
 T I-Disease I-Disease
 allele O O
 . O O
@@ -267,9 +267,9 @@ non I-Disease I-Disease
 Hodgkins I-Disease I-Disease
 lymphomas I-Disease I-Disease
 ( O O
-B B-Disease B-Disease
-- I-Disease I-Disease
-NHL I-Disease I-Disease
+B B-Disease O
+- I-Disease O
+NHL I-Disease O
 ) O O
 and O O
 a O O
@@ -308,7 +308,7 @@ the O O
 majority O O
 of O O
 mutated O O
-tumours B-Disease O
+tumours B-Disease B-Disease
 establishes O O
 somatic O O
 inactivation O O
@@ -319,8 +319,8 @@ in O O
 the O O
 pathogenesis O O
 of O O
-sporadic B-Disease B-Disease
-T I-Disease I-Disease
+sporadic B-Disease O
+T I-Disease B-Disease
 - I-Disease I-Disease
 PLL I-Disease I-Disease
 and O O
@@ -611,8 +611,8 @@ ATPase O O
 are O O
 affected O O
 by O O
-DMPK O B-Disease
-absence O I-Disease
+DMPK O O
+absence O O
 . O O
 
 In O O
@@ -649,8 +649,8 @@ mutations O O
 in O O
 patients O O
 with O O
-isolated O O
-unilateral B-Disease I-Disease
+isolated O B-Disease
+unilateral B-Disease B-Disease
 retinoblastoma I-Disease I-Disease
 . O O
 
@@ -659,7 +659,7 @@ most O O
 patients O O
 with O O
 isolated O O
-unilateral B-Disease I-Disease
+unilateral B-Disease B-Disease
 retinoblastoma I-Disease I-Disease
 , O O
 tumor B-Disease B-Disease
@@ -709,7 +709,7 @@ in O O
 patients O O
 with O O
 isolated O O
-unilateral B-Disease O
+unilateral B-Disease B-Disease
 retinoblastoma I-Disease I-Disease
 , O O
 we O O
@@ -873,7 +873,7 @@ structural O O
 alterations O O
 , O O
 and O O
-hypermethylation O O
+hypermethylation O B-Disease
 in O O
 3 O O
 tumors O B-Disease
@@ -987,7 +987,7 @@ the O O
 other O O
 later O O
 developed O O
-bilateral B-Disease O
+bilateral B-Disease B-Disease
 retinoblastoma I-Disease I-Disease
 . O O
 
@@ -1031,8 +1031,8 @@ affected O O
 . O O
 . O O
 
-Hereditary B-Disease O
-deficiency I-Disease B-Disease
+Hereditary B-Disease B-Disease
+deficiency I-Disease I-Disease
 of I-Disease I-Disease
 the I-Disease I-Disease
 fifth I-Disease I-Disease
@@ -1128,7 +1128,7 @@ normal O O
 during O O
 remission O O
 of O O
-lupus O B-Disease
+lupus O O
 , O O
 but O O
 C1 O O
@@ -1232,7 +1232,7 @@ C5 B-Disease B-Disease
 - I-Disease I-Disease
 deficient I-Disease I-Disease
 ( O O
-C5D B-Disease B-Disease
+C5D B-Disease O
 ) O O
 sera O O
 by O O
@@ -1366,7 +1366,7 @@ remarkable O O
 propensity O O
 to O O
 bacterial B-Disease B-Disease
-infections I-Disease I-Disease
+infections I-Disease O
 in O O
 the O O
 proband O O
@@ -1408,8 +1408,8 @@ a O O
 neutrophilic O O
 leukocytosis O O
 during O O
-pyogenic B-Disease B-Disease
-infection I-Disease I-Disease
+pyogenic B-Disease O
+infection I-Disease O
 . O O
 . O O
 
@@ -1591,7 +1591,7 @@ and O O
 4 O O
 of O O
 32 O O
-DZ O B-Disease
+DZ O O
 twin O O
 pairs O O
 overall O O
@@ -1633,7 +1633,7 @@ twins O O
 compared O O
 with O O
 concordant O O
-DZ O B-Disease
+DZ O O
 twins O O
 . O O
 
@@ -1660,7 +1660,7 @@ was O O
 significantly O O
 increased O O
 among O O
-DZ O B-Disease
+DZ O O
 twin O O
 pairs O O
 in O O
@@ -1981,10 +1981,10 @@ role O O
 for O O
 BARD1 O O
 in O O
-BRCA1 O O
+BRCA1 O B-Disease
 - O O
 mediated O O
-tumor B-Disease I-Disease
+tumor B-Disease B-Disease
 suppression O O
 . O O
 
@@ -2196,7 +2196,7 @@ and O O
 different O O
 disorders O O
 including O O
-cancer B-Disease B-Disease
+cancer B-Disease O
 
 Autosomal B-Disease B-Disease
 dominant I-Disease I-Disease
@@ -2238,7 +2238,7 @@ degeneration O I-Disease
 of O I-Disease
 the O I-Disease
 magnocellular O I-Disease
-neurons O O
+neurons O I-Disease
 of O I-Disease
 the O I-Disease
 hypothalamus O I-Disease
@@ -2287,10 +2287,10 @@ the O O
 disease O O
 is O O
 the O O
-AVP O O
-- O O
+AVP O B-Disease
+- O I-Disease
 neurophysin O I-Disease
-II O I-Disease
+II O O
 ( O O
 NPII O O
 ) O O
@@ -2413,7 +2413,7 @@ models O O
 of O O
 dominantly B-Disease O
 inherited I-Disease O
-neurodegeneration I-Disease O
+neurodegeneration I-Disease B-Disease
 , O O
 as O O
 the O O
@@ -2445,8 +2445,8 @@ PTEN O O
 / O O
 MMAC1 O O
 in O O
-primary O B-Disease
-prostate B-Disease I-Disease
+primary O O
+prostate B-Disease B-Disease
 cancer I-Disease I-Disease
 . O O
 
@@ -2457,8 +2457,8 @@ is O O
 the O O
 most O O
 common O O
-male B-Disease B-Disease
-cancer I-Disease I-Disease
+male B-Disease O
+cancer I-Disease B-Disease
 in O O
 the O O
 Western O O
@@ -2502,7 +2502,7 @@ chromosomal O O
 arm O O
 10q O O
 in O O
-sporadic B-Disease B-Disease
+sporadic B-Disease O
 prostate I-Disease I-Disease
 cancer I-Disease I-Disease
 . O O
@@ -2628,7 +2628,7 @@ in O O
 43 O O
 % O O
 ) O O
-tumors B-Disease I-Disease
+tumors B-Disease B-Disease
 establishes O O
 PTEN O O
 / O O
@@ -2876,11 +2876,11 @@ in O O
 N O B-Disease
 - O I-Disease
 acetylgalactosamine O I-Disease
-- O I-Disease
+- O O
 6 O I-Disease
-- O I-Disease
-sulfate O I-Disease
-sulfatase O I-Disease
+- O O
+sulfate O O
+sulfatase O O
 ( O O
 GALNS O O
 ) O O
@@ -2921,7 +2921,7 @@ GALNS O O
 gene O O
 in O O
 Colombian O O
-MPS B-Disease I-Disease
+MPS B-Disease B-Disease
 IVA I-Disease I-Disease
 patients O O
 were O O
@@ -3268,7 +3268,7 @@ case O O
 of O O
 paternally O O
 transmitted O O
-congenital B-Disease I-Disease
+congenital B-Disease B-Disease
 myotonic I-Disease I-Disease
 dystrophy I-Disease I-Disease
 ( O O
@@ -3288,9 +3288,9 @@ mentally B-Disease B-Disease
 retarded I-Disease I-Disease
 male O O
 who O O
-suffers O O
+suffers O B-Disease
 severe O I-Disease
-muscular B-Disease B-Disease
+muscular B-Disease I-Disease
 weakness I-Disease I-Disease
 . O O
 
@@ -3340,7 +3340,7 @@ of O O
 paternal O O
 transmission O O
 of O O
-congenital B-Disease O
+congenital B-Disease B-Disease
 DM I-Disease B-Disease
 have O O
 been O O
@@ -3387,8 +3387,8 @@ of O O
 paternal O O
 transmission O O
 of O O
-congenital B-Disease O
-DM I-Disease B-Disease
+congenital B-Disease B-Disease
+DM I-Disease I-Disease
 . O O
 
 Also O O
@@ -3422,7 +3422,7 @@ of O O
 children O O
 with O O
 congenital B-Disease B-Disease
-DM I-Disease B-Disease
+DM I-Disease I-Disease
 . O O
 
 We O O
@@ -3431,8 +3431,8 @@ that O O
 paternal O O
 transmission O O
 of O O
-congenital B-Disease O
-DM I-Disease B-Disease
+congenital B-Disease B-Disease
+DM I-Disease I-Disease
 is O O
 rare O O
 and O O
@@ -3611,7 +3611,7 @@ apparent O O
 deficiency O B-Disease
 of O I-Disease
 this O O
-enzyme O I-Disease
+enzyme O O
 . O O
 
 Appreciable O O
@@ -3628,7 +3628,7 @@ been O O
 detected O O
 in O O
 cultured O O
-skin O B-Disease
+skin O O
 fibroblasts O O
 and O O
 melanoma B-Disease B-Disease
@@ -3644,7 +3644,7 @@ deficiency B-Disease B-Disease
 of I-Disease I-Disease
 hex I-Disease I-Disease
 A I-Disease I-Disease
-activity O I-Disease
+activity O O
 indistinguishable O O
 from O O
 that O O
@@ -3806,9 +3806,9 @@ hex B-Disease O
 A I-Disease O
 deficiency I-Disease I-Disease
 of O I-Disease
-the O I-Disease
-type O I-Disease
-described O I-Disease
+the O O
+type O O
+described O O
 in O O
 the O O
 four O O
@@ -3840,7 +3840,7 @@ embryo O O
 Mutations O O
 in O O
 the O O
-SMAD4 O O
+SMAD4 O B-Disease
 / O O
 DPC4 O O
 tumor B-Disease I-Disease
@@ -3906,14 +3906,14 @@ endoderm O O
 development O O
 . O O
 
-Growth B-Disease O
-retardation I-Disease B-Disease
+Growth B-Disease B-Disease
+retardation I-Disease I-Disease
 of O O
 the O I-Disease
 Smad4 O I-Disease
 - O I-Disease
 deficient O I-Disease
-embryos O O
+embryos O I-Disease
 results O O
 from O O
 reduced O O
@@ -3939,8 +3939,8 @@ tetraploid O O
 morulae O O
 rescues O O
 the O O
-gastrulation B-Disease B-Disease
-defect I-Disease I-Disease
+gastrulation B-Disease O
+defect I-Disease O
 . O O
 
 These O O
@@ -3980,7 +3980,7 @@ embryos O O
 show O O
 severe O O
 anterior O O
-truncations O I-Disease
+truncations O O
 , O O
 indicating O O
 a O O
@@ -4017,7 +4017,7 @@ The O O
 French O O
 Familial B-Disease B-Disease
 Melanoma I-Disease I-Disease
-Study O I-Disease
+Study O O
 Group O O
 . O O
 
@@ -4186,7 +4186,7 @@ familial B-Disease B-Disease
 melanoma I-Disease I-Disease
 and O O
 confirm O O
-the O I-Disease
+the O O
 role O O
 of O O
 the O O
@@ -4469,7 +4469,7 @@ mosaicism O O
 
 Aspartylglucosaminuria B-Disease B-Disease
 among O O
-Palestinian O O
+Palestinian O B-Disease
 Arabs O O
 . O O
 
@@ -4480,7 +4480,7 @@ AGU B-Disease B-Disease
 is O O
 a O O
 rare O O
-disorder B-Disease I-Disease
+disorder B-Disease O
 of I-Disease I-Disease
 glycoprotein I-Disease I-Disease
 metabolism I-Disease I-Disease
@@ -4778,7 +4778,7 @@ carriers O O
 Both O O
 A B-Disease O
 - I-Disease O
-T I-Disease O
+T I-Disease I-Disease
 homozygotes O O
 and O O
 heterozygotes O O
@@ -4821,7 +4821,7 @@ of O O
 A B-Disease B-Disease
 - I-Disease I-Disease
 T I-Disease I-Disease
-heterozygotes O O
+heterozygotes O I-Disease
 . O O
 
 In O O
@@ -4840,9 +4840,9 @@ value O O
 in O O
 studies O O
 of O O
-familial B-Disease O
-and I-Disease O
-sporadic I-Disease B-Disease
+familial B-Disease B-Disease
+and I-Disease I-Disease
+sporadic I-Disease I-Disease
 cancers I-Disease I-Disease
 aimed O O
 at O O
@@ -5020,7 +5020,7 @@ in O O
 76 O O
 % O O
 of O O
-Costa O O
+Costa O B-Disease
 Rican O O
 patients O O
 ( O O
@@ -5030,7 +5030,7 @@ patients O O
 50 O O
 % O O
 of O O
-Norwegian O B-Disease
+Norwegian O O
 patients O O
 ( O O
 1 O O
@@ -5039,7 +5039,7 @@ patients O O
 25 O O
 % O O
 of O O
-Polish O B-Disease
+Polish O O
 patients O O
 ( O O
 4 O O
@@ -5130,9 +5130,9 @@ von B-Disease B-Disease
 Hippel I-Disease I-Disease
 - I-Disease I-Disease
 Lindau I-Disease I-Disease
-( I-Disease O
-VHL I-Disease B-Disease
-) I-Disease O
+( I-Disease I-Disease
+VHL I-Disease I-Disease
+) I-Disease I-Disease
 tumor I-Disease I-Disease
 suppressor O O
 gene O O
@@ -5245,7 +5245,7 @@ restores O O
 the O O
 ability O O
 of O O
-VHL O O
+VHL O B-Disease
 - O O
 negative O O
 RCC B-Disease B-Disease
@@ -5267,11 +5267,11 @@ serum O O
 . O O
 
 Both O O
-VHL O O
+VHL O B-Disease
 - O O
 positive O O
 and O O
-VHL O O
+VHL O B-Disease
 - O O
 negative O O
 RCC B-Disease O
@@ -5397,7 +5397,7 @@ molecular O O
 evidence O O
 for O O
 an O O
-expanded O O
+expanded O B-Disease
 syndrome O O
 . O O
 
@@ -5538,7 +5538,7 @@ generalized O O
 atrophic B-Disease B-Disease
 benign I-Disease I-Disease
 epidermolysis I-Disease I-Disease
-bullosa I-Disease O
+bullosa I-Disease I-Disease
 . O O
 
 Patients O O
@@ -5546,8 +5546,8 @@ with O O
 generalized O O
 atrophic B-Disease B-Disease
 benign I-Disease I-Disease
-epidermolysis I-Disease O
-bullosa I-Disease O
+epidermolysis I-Disease I-Disease
+bullosa I-Disease I-Disease
 often O O
 show O O
 decreased O O
@@ -5582,9 +5582,9 @@ a O O
 patient O O
 with O O
 generalized O O
-atrophic B-Disease I-Disease
+atrophic B-Disease B-Disease
 benign I-Disease I-Disease
-epidermolysis I-Disease O
+epidermolysis I-Disease I-Disease
 bullosa I-Disease O
 , O O
 and O O
@@ -5855,8 +5855,8 @@ families O O
 with O O
 generalized O O
 atrophic B-Disease B-Disease
-benign I-Disease O
-epidermolysis I-Disease O
+benign I-Disease I-Disease
+epidermolysis I-Disease I-Disease
 bullosa I-Disease O
 represents O O
 propagation O O
@@ -5871,17 +5871,17 @@ with O O
 generalized O O
 atrophic B-Disease B-Disease
 benign I-Disease I-Disease
-epidermolysis I-Disease O
-bullosa I-Disease O
+epidermolysis I-Disease I-Disease
+bullosa I-Disease I-Disease
 , O O
 a O O
 usually O O
 nonlethal O O
 form O O
 of O O
-junctional B-Disease O
-epidermolysis I-Disease O
-bullosa I-Disease O
+junctional B-Disease B-Disease
+epidermolysis I-Disease I-Disease
+bullosa I-Disease I-Disease
 , O O
 have O O
 generalized O O
@@ -5930,8 +5930,8 @@ with O O
 generalized O O
 atrophic B-Disease B-Disease
 benign I-Disease I-Disease
-epidermolysis I-Disease O
-bullosa I-Disease O
+epidermolysis I-Disease I-Disease
+bullosa I-Disease I-Disease
 who O O
 share O O
 the O O
@@ -6283,7 +6283,7 @@ the O O
 father O O
 to O O
 be O O
-hypohaptoglobinemic B-Disease O
+hypohaptoglobinemic B-Disease B-Disease
 ( O O
 Hp2 O O
 ) O O
@@ -6311,7 +6311,7 @@ two O O
 children O O
 to O O
 be O O
-hypohaptoglobinemic B-Disease O
+hypohaptoglobinemic B-Disease B-Disease
 ( O O
 Hp2 O O
 ) O O
@@ -6513,7 +6513,7 @@ study O O
 the O O
 mechanism O O
 of O O
-anhaptoglobinemia B-Disease O
+anhaptoglobinemia B-Disease B-Disease
 and O O
 the O O
 mechanism O O
@@ -6562,7 +6562,7 @@ of O O
 leukemia B-Disease B-Disease
 , O O
 lymphoma B-Disease B-Disease
-, O I-Disease
+, O O
 and O O
 breast B-Disease B-Disease
 cancer I-Disease I-Disease
@@ -6836,7 +6836,7 @@ myotonic B-Disease B-Disease
 dystrophy I-Disease I-Disease
 patients O O
 is O O
-hypermethylated O O
+hypermethylated O B-Disease
 proximal O O
 to O O
 the O O
@@ -7051,7 +7051,7 @@ in O O
 cells O O
 with O O
 a O O
-hypermethylated O O
+hypermethylated O B-Disease
 DMPK O O
 gene O O
 . O O
@@ -7089,7 +7089,7 @@ for O O
 hereditary B-Disease B-Disease
 hemochromatosis I-Disease I-Disease
 called O O
-HFE O I-Disease
+HFE O O
 . O O
 
 The O O
@@ -7482,7 +7482,7 @@ or O O
 chromosome O O
 15 O O
 paternal O O
-uniparental B-Disease I-Disease
+uniparental B-Disease B-Disease
 disomy I-Disease I-Disease
 . O O
 
@@ -7704,10 +7704,10 @@ sporadic B-Disease O
 breast I-Disease I-Disease
 , I-Disease I-Disease
 brain I-Disease I-Disease
-, I-Disease O
+, I-Disease I-Disease
 prostate I-Disease I-Disease
 and I-Disease I-Disease
-kidney I-Disease I-Disease
+kidney I-Disease B-Disease
 cancer I-Disease I-Disease
 cell O O
 lines O O
@@ -7715,7 +7715,7 @@ and O O
 in O O
 several O O
 primary O O
-tumours B-Disease B-Disease
+tumours B-Disease I-Disease
 such O O
 as O O
 endometrial B-Disease B-Disease
@@ -7765,7 +7765,7 @@ Riley I-Disease I-Disease
 Smith I-Disease I-Disease
 syndrome I-Disease I-Disease
 ( O O
-MIM O O
+MIM O B-Disease
 153480 O O
 ) O O
 . O O
@@ -8061,13 +8061,13 @@ and O O
 the O O
 type O O
 of O O
-breast O O
+breast O B-Disease
 involvement O I-Disease
 ( O O
 unaffected O O
 versus O O
 benign O O
-versus O O
+versus O B-Disease
 malignant O B-Disease
 ) O O
 . O O
@@ -8138,13 +8138,13 @@ nervous O O
 system O O
 , O O
 thyroid O B-Disease
-, O I-Disease
-breast O I-Disease
+, O O
+breast O B-Disease
 , O I-Disease
 skin O I-Disease
-and O O
-gastrointestinal O O
-tract O O
+and O I-Disease
+gastrointestinal O I-Disease
+tract O I-Disease
 ) O O
 . O O
 
@@ -8217,7 +8217,7 @@ two O O
 brothers O O
 also O O
 had O O
-C6D B-Disease B-Disease
+C6D B-Disease O
 , O O
 but O O
 gave O O
@@ -8304,7 +8304,7 @@ described O O
 before O O
 to O O
 cause O O
-C6D B-Disease B-Disease
+C6D B-Disease O
 in O O
 an O O
 unrelated O O
@@ -8387,7 +8387,7 @@ cataracts I-Disease I-Disease
 , O O
 with O O
 autosomal B-Disease O
-dominant I-Disease O
+dominant I-Disease I-Disease
 keratitis I-Disease I-Disease
 , O O
 and O O
@@ -8591,7 +8591,7 @@ BRCA1 O O
 and O O
 BRCA2 O O
 to O O
-inherited B-Disease B-Disease
+inherited B-Disease O
 breast I-Disease I-Disease
 cancer I-Disease I-Disease
 was O O
@@ -8635,7 +8635,7 @@ occurrence O O
 of O O
 ovarian B-Disease B-Disease
 or I-Disease I-Disease
-other I-Disease I-Disease
+other I-Disease O
 cancers I-Disease I-Disease
 . O O
 
@@ -8765,8 +8765,8 @@ or O O
 five O O
 cases O O
 of O O
-female O B-Disease
-breast B-Disease I-Disease
+female O O
+breast B-Disease B-Disease
 cancer I-Disease I-Disease
 only O O
 . O O
@@ -8892,7 +8892,7 @@ reached O O
 ( O O
 95 O O
 % O O
-CI O B-Disease
+CI O O
 9 O O
 % O O
 - O O
@@ -8909,7 +8909,7 @@ and O O
 ( O O
 95 O O
 % O O
-CI O B-Disease
+CI O O
 43 O O
 % O O
 - O O
@@ -9001,8 +9001,8 @@ age O O
 . O O
 
 Eye B-Disease O
-movement I-Disease I-Disease
-abnormalities I-Disease I-Disease
+movement I-Disease O
+abnormalities I-Disease O
 correlate O O
 with O O
 genotype O O
@@ -9045,7 +9045,7 @@ with O O
 three O O
 forms O O
 of O O
-autosomal O O
+autosomal O B-Disease
 dominant O O
 cerebellar B-Disease I-Disease
 ataxias I-Disease I-Disease
@@ -9170,7 +9170,7 @@ present O O
 as O O
 was O O
 saccade O O
-hypometria O I-Disease
+hypometria O O
 and O O
 smooth O O
 pursuit O O
@@ -9273,7 +9273,7 @@ than O O
 300 O O
 , O O
 000 O O
-sudden O B-Disease
+sudden O O
 deaths O O
 each O O
 year O O
@@ -9297,11 +9297,11 @@ there O O
 are O O
 no O O
 demonstrable O O
-cardiac O O
+cardiac O B-Disease
 or O O
 non O O
-- O I-Disease
-cardiac O I-Disease
+- O O
+cardiac O O
 causes O O
 to O O
 account O O
@@ -9373,8 +9373,8 @@ done O O
 Because O O
 IVF B-Disease B-Disease
 causes O O
-cardiac O O
-rhythm O O
+cardiac O B-Disease
+rhythm O I-Disease
 disturbance O I-Disease
 , O O
 we O O
@@ -9532,11 +9532,11 @@ in O O
 N O B-Disease
 - O I-Disease
 acetylgalactosamine O I-Disease
-- O I-Disease
+- O O
 6 O I-Disease
-- O I-Disease
-sulfate O I-Disease
-sulfatase O I-Disease
+- O O
+sulfate O O
+sulfatase O O
 ( O O
 GALNS O O
 ) O O
@@ -9827,7 +9827,7 @@ MPS B-Disease B-Disease
 IVA I-Disease I-Disease
 in O O
 British O B-Disease
-- O O
+- O I-Disease
 Irish O O
 patients O O
 and O O
@@ -9912,7 +9912,7 @@ DDS B-Disease B-Disease
 ) O O
 , O O
 or O O
-diffuse B-Disease B-Disease
+diffuse B-Disease O
 mesangial I-Disease B-Disease
 sclerosis I-Disease I-Disease
 ( O O
@@ -9977,7 +9977,7 @@ patients O O
 , O O
 10 O O
 with O O
-isolated B-Disease B-Disease
+isolated B-Disease O
 DMS I-Disease B-Disease
 ( O O
 IDMS B-Disease B-Disease
@@ -10121,7 +10121,7 @@ exons O O
 and O O
 9 O O
 and O O
-DMS B-Disease B-Disease
+DMS B-Disease O
 ; O O
 ( O O
 2 O O
@@ -10141,7 +10141,7 @@ mutations O O
 among O O
 46 O O
 , O O
-XY O O
+XY O B-Disease
 patients O O
 with O O
 female O O
@@ -10906,7 +10906,7 @@ bind O O
 to O O
 the O O
 human O O
-cardiac O O
+cardiac O B-Disease
 troponin O O
 T O O
 ( O O
@@ -11005,7 +11005,7 @@ dominant I-Disease I-Disease
 disease I-Disease I-Disease
 caused O O
 by O O
-deficiency O O
+deficiency O B-Disease
 in O I-Disease
 the O I-Disease
 antidiuretic O I-Disease
@@ -11233,8 +11233,8 @@ syndrome I-Disease I-Disease
 a O O
 common O O
 autosomal B-Disease O
-dominant I-Disease O
-condition I-Disease O
+dominant I-Disease I-Disease
+condition I-Disease I-Disease
 of O I-Disease
 craniosynostosis B-Disease I-Disease
 and O I-Disease
@@ -11370,12 +11370,12 @@ low B-Disease O
 frontal I-Disease O
 hairline I-Disease O
 , O O
-facial B-Disease O
-asymmetry I-Disease O
+facial B-Disease B-Disease
+asymmetry I-Disease I-Disease
 , O O
 ptosis B-Disease O
 , O O
-hypertelorism B-Disease O
+hypertelorism B-Disease B-Disease
 , O O
 broad B-Disease O
 great I-Disease O
@@ -11457,9 +11457,9 @@ in O O
 the O O
 modulation O O
 of O O
-craniofacial O O
-and O O
-limb O O
+craniofacial O B-Disease
+and O I-Disease
+limb O I-Disease
 development O O
 in O O
 humans O O
@@ -11494,8 +11494,8 @@ maternal O O
 origin O O
 , O O
 by O O
-paternal O B-Disease
-uniparental B-Disease I-Disease
+paternal O O
+uniparental B-Disease B-Disease
 disomy I-Disease I-Disease
 ( O O
 UPD B-Disease B-Disease
@@ -12113,7 +12113,7 @@ FAP B-Disease B-Disease
 ) O O
 . O O
 
-AAPC B-Disease B-Disease
+AAPC B-Disease O
 is O O
 recognized O O
 by O O
@@ -12197,7 +12197,7 @@ novel O O
 germ O O
 - O O
 line O O
-APC B-Disease B-Disease
+APC B-Disease O
 mutations O O
 were O O
 identified O O
@@ -12329,9 +12329,9 @@ a O O
 predominance O O
 of O O
 right O O
-- O I-Disease
+- O O
 sided O O
-colorectal B-Disease I-Disease
+colorectal B-Disease B-Disease
 adenomas I-Disease I-Disease
 and O O
 rectal B-Disease O
@@ -12505,7 +12505,7 @@ mutations O O
 associated O O
 with O O
 male B-Disease O
-pseudohermaphroditism I-Disease O
+pseudohermaphroditism I-Disease I-Disease
 in O O
 Denys B-Disease B-Disease
 - I-Disease I-Disease
@@ -12517,7 +12517,7 @@ to O O
 synergize O O
 with O O
 SF O O
-- O I-Disease
+- O O
 1 O O
 . O O
 
@@ -12799,7 +12799,7 @@ gene O O
 detected O O
 in O O
 Japanese O O
-ataxia B-Disease B-Disease
+ataxia B-Disease I-Disease
 - I-Disease I-Disease
 telangiectasia I-Disease I-Disease
 patients O O
@@ -12819,9 +12819,9 @@ and O O
 The O O
 ATM O O
 ( O O
-A O B-Disease
-- O I-Disease
-T O I-Disease
+A O O
+- O O
+T O O
 , O O
 mutated O O
 ) O O
@@ -13161,30 +13161,30 @@ TSD B-Disease B-Disease
 , O O
 the O O
 fatal O O
-infantile B-Disease O
+infantile B-Disease I-Disease
 form I-Disease O
 of I-Disease O
 G I-Disease O
 ( I-Disease O
 M2 I-Disease O
 ) I-Disease O
-gangliosidosis I-Disease I-Disease
+gangliosidosis I-Disease O
 , I-Disease O
 Type I-Disease O
-1 I-Disease I-Disease
+1 I-Disease O
 . O O
 
 Less O O
 severe O O
 , O O
-subacute O O
+subacute O B-Disease
 ( O O
-juvenile O O
-- O O
-onset O O
+juvenile O B-Disease
+- O I-Disease
+onset O I-Disease
 ) O O
 and O O
-chronic O O
+chronic O B-Disease
 ( O O
 adult O O
 - O O
@@ -13267,7 +13267,7 @@ we O O
 identified O O
 the O O
 common O O
-infantile O O
+infantile O B-Disease
 disease O I-Disease
 - O O
 causing O O
@@ -13392,7 +13392,7 @@ alpha O O
 subunit O O
 associated O O
 with O O
-infantile O O
+infantile O B-Disease
 TSD B-Disease B-Disease
 . O O
 
@@ -13439,7 +13439,7 @@ the O O
 cause O O
 of O O
 Hex B-Disease B-Disease
-A I-Disease B-Disease
+A I-Disease I-Disease
 enzyme I-Disease I-Disease
 deficiency I-Disease I-Disease
 in O O
@@ -13507,10 +13507,10 @@ disorder I-Disease I-Disease
 characterized O O
 by O O
 early O O
-childhood O B-Disease
-deafness B-Disease I-Disease
+childhood O O
+deafness B-Disease B-Disease
 and O O
-goiter B-Disease I-Disease
+goiter B-Disease B-Disease
 . O O
 
 A O O
@@ -13529,7 +13529,7 @@ the O O
 disease O O
 gene O O
 ( O O
-PDS O B-Disease
+PDS O O
 ) O O
 was O O
 mapped O O
@@ -13928,12 +13928,12 @@ obesity B-Disease B-Disease
 adrenal B-Disease B-Disease
 insufficiency I-Disease I-Disease
 and O O
-red O B-Disease
+red O I-Disease
 hair O I-Disease
 pigmentation O I-Disease
 caused O O
 by O O
-POMC O B-Disease
+POMC O O
 mutations O O
 in O O
 humans O O
@@ -13992,7 +13992,7 @@ a O O
 few O O
 cases O O
 of O O
-isolated O O
+isolated O B-Disease
 ACTH B-Disease B-Disease
 deficiency I-Disease I-Disease
 have O O
@@ -14118,8 +14118,8 @@ obesity B-Disease B-Disease
 alteration O O
 in O O
 pigmentation O B-Disease
-and O O
-ACTH B-Disease B-Disease
+and O I-Disease
+ACTH B-Disease I-Disease
 deficiency I-Disease I-Disease
 . O O
 
@@ -14203,8 +14203,8 @@ first O O
 examples O O
 of O O
 a O O
-genetic B-Disease O
-defect I-Disease O
+genetic B-Disease B-Disease
+defect I-Disease I-Disease
 within O O
 the O O
 POMC O O
@@ -14214,7 +14214,7 @@ define O O
 a O O
 new O O
 monogenic B-Disease O
-endocrine I-Disease O
+endocrine I-Disease I-Disease
 disorder I-Disease I-Disease
 resulting O O
 in O O
@@ -14225,7 +14225,7 @@ obesity B-Disease B-Disease
 , O O
 adrenal B-Disease B-Disease
 insufficiency I-Disease I-Disease
-and O O
+and O I-Disease
 red O I-Disease
 hair O I-Disease
 pigmentation O I-Disease
@@ -14264,7 +14264,7 @@ Phenylketonuria B-Disease B-Disease
 PKU B-Disease B-Disease
 ) O O
 and O O
-mild B-Disease B-Disease
+mild B-Disease O
 hyperphenylalaninemia I-Disease B-Disease
 ( O O
 MHP B-Disease B-Disease
@@ -15000,7 +15000,7 @@ phenotypes O O
 . O O
 . O O
 
-Maternal B-Disease B-Disease
+Maternal B-Disease O
 disomy I-Disease I-Disease
 and O O
 Prader B-Disease B-Disease
@@ -15035,7 +15035,7 @@ Maternal B-Disease B-Disease
 uniparental I-Disease I-Disease
 disomy I-Disease I-Disease
 ( I-Disease O
-UPD I-Disease B-Disease
+UPD I-Disease I-Disease
 ) I-Disease O
 for I-Disease O
 chromosome I-Disease O
@@ -15319,8 +15319,8 @@ reported O O
 for O O
 haploinsufficiency O B-Disease
 of O I-Disease
-distal O O
-3 O O
+distal O I-Disease
+3 O I-Disease
 p O O
 . O O
 
@@ -15380,7 +15380,7 @@ Schwartz B-Disease B-Disease
 Jampel I-Disease I-Disease
 syndrome I-Disease I-Disease
 type I-Disease O
-2 I-Disease O
+2 I-Disease I-Disease
 and O O
 Stuve B-Disease B-Disease
 - I-Disease I-Disease
@@ -15426,12 +15426,12 @@ dysplasia I-Disease I-Disease
 which O O
 we O O
 called O O
-SJS B-Disease B-Disease
-type I-Disease I-Disease
-2 I-Disease I-Disease
+SJS B-Disease O
+type I-Disease O
+2 I-Disease O
 . O O
 
-This O O
+This O B-Disease
 disorder O O
 is O O
 reminiscent O O
@@ -15516,8 +15516,8 @@ reported O O
 as O O
 having O O
 either O O
-neonatal O B-Disease
-SJS B-Disease I-Disease
+neonatal O O
+SJS B-Disease B-Disease
 or O O
 SWS B-Disease B-Disease
 presented O O
@@ -15538,7 +15538,7 @@ congenital B-Disease B-Disease
 joint I-Disease I-Disease
 contractures I-Disease I-Disease
 , O O
-respiratory O I-Disease
+respiratory O B-Disease
 and O O
 feeding O O
 difficulties O O
@@ -15608,7 +15608,7 @@ patients O O
 one O O
 with O O
 SJS B-Disease B-Disease
-type I-Disease I-Disease
+type I-Disease O
 2 I-Disease O
 , O O
 one O O
@@ -15635,7 +15635,7 @@ SWS B-Disease B-Disease
 and O O
 SJS B-Disease B-Disease
 type I-Disease I-Disease
-2 I-Disease I-Disease
+2 I-Disease O
 are O O
 the O O
 same O O
@@ -15653,12 +15653,12 @@ A O O
 mouse O O
 model O O
 of O O
-severe O B-Disease
-von B-Disease I-Disease
+severe O O
+von B-Disease B-Disease
 Willebrand I-Disease I-Disease
 disease I-Disease I-Disease
 : O O
-defects O I-Disease
+defects O O
 in O O
 hemostasis O B-Disease
 and O O
@@ -15672,8 +15672,8 @@ factor I-Disease I-Disease
 vWf I-Disease B-Disease
 ) I-Disease I-Disease
 deficiency I-Disease I-Disease
-causes O O
-severe O B-Disease
+causes O I-Disease
+severe O O
 von B-Disease B-Disease
 Willebrand I-Disease I-Disease
 disease I-Disease I-Disease
@@ -15695,9 +15695,9 @@ gene O O
 targeting O O
 . O O
 
-vWf B-Disease B-Disease
-- I-Disease I-Disease
-deficient I-Disease I-Disease
+vWf B-Disease O
+- I-Disease O
+deficient I-Disease O
 mice O O
 appeared O O
 normal O O
@@ -15719,8 +15719,8 @@ propolypeptide O O
 ( O O
 von B-Disease B-Disease
 Willebrand I-Disease I-Disease
-antigen O I-Disease
-II O I-Disease
+antigen O O
+II O O
 ) O O
 were O O
 detectable O O
@@ -15793,8 +15793,8 @@ by O O
 vWf O O
 . O O
 
-Defective O O
-thrombosis B-Disease B-Disease
+Defective O B-Disease
+thrombosis B-Disease I-Disease
 in O O
 mutant O O
 mice O O
@@ -15807,8 +15807,8 @@ in O O
 vivo O O
 model O O
 of O O
-vascular B-Disease O
-injury I-Disease O
+vascular B-Disease B-Disease
+injury I-Disease I-Disease
 . O O
 
 In O O
@@ -15883,9 +15883,9 @@ cancer I-Disease I-Disease
 . O O
 
 Hereditary B-Disease O
-Ovarian I-Disease B-Disease
+Ovarian I-Disease O
 Cancer I-Disease I-Disease
-Clinical O I-Disease
+Clinical O O
 Study O O
 Group O O
 . O O
@@ -15914,9 +15914,9 @@ cancer I-Disease I-Disease
 
 Oral O O
 contraceptives O O
-protect O O
-against O O
-ovarian B-Disease B-Disease
+protect O I-Disease
+against O I-Disease
+ovarian B-Disease I-Disease
 cancer I-Disease I-Disease
 in O O
 general O O
@@ -15931,7 +15931,7 @@ they O O
 also O O
 protect O O
 against O O
-hereditary B-Disease B-Disease
+hereditary B-Disease O
 forms I-Disease I-Disease
 of I-Disease I-Disease
 ovarian I-Disease I-Disease
@@ -16274,9 +16274,9 @@ intermediate O O
 type O O
 of O O
 adult O O
-cerebral O O
+cerebral O I-Disease
 and O O
-cerebello O O
+cerebello O B-Disease
 - O I-Disease
 brain O I-Disease
 stem O O
@@ -16361,8 +16361,8 @@ abnormalities B-Disease O
 in I-Disease O
 the I-Disease O
 bilateral I-Disease O
-cerebellar I-Disease O
-hemispheres I-Disease O
+cerebellar I-Disease I-Disease
+hemispheres I-Disease I-Disease
 and O O
 brain O O
 stem O O
@@ -16410,7 +16410,7 @@ findings O O
 showed O O
 massive O O
 demyelination B-Disease B-Disease
-of I-Disease O
+of I-Disease I-Disease
 the I-Disease I-Disease
 cerebral I-Disease I-Disease
 white I-Disease O
@@ -16641,8 +16641,8 @@ in O O
 the O O
 four O O
 C9 B-Disease B-Disease
-- I-Disease I-Disease
-deficient I-Disease I-Disease
+- I-Disease O
+deficient I-Disease O
 individuals O O
 . O O
 
@@ -16705,7 +16705,7 @@ be O O
 responsible O O
 for O O
 most O O
-Japanese O O
+Japanese O B-Disease
 C9 B-Disease B-Disease
 deficiency I-Disease I-Disease
 . O O
@@ -16931,7 +16931,7 @@ anomaly I-Disease I-Disease
 , O O
 autosomal B-Disease O
 dominant I-Disease O
-keratitis I-Disease I-Disease
+keratitis I-Disease O
 , O O
 and O O
 familial B-Disease B-Disease
@@ -16958,8 +16958,8 @@ is O O
 caused O O
 due O O
 to O O
-genetic O B-Disease
-haploinsufficiency O I-Disease
+genetic O O
+haploinsufficiency O B-Disease
 . O O
 
 However O O
@@ -17024,7 +17024,7 @@ mutants O O
 as O O
 predicted O O
 by O O
-haploinsufficiency O O
+haploinsufficiency O B-Disease
 . O O
 
 Contrary O O
@@ -17137,7 +17137,7 @@ hypertrophic B-Disease B-Disease
 cardiomyopathy I-Disease I-Disease
 and O O
 excellent O O
-neuropsychologic O O
+neuropsychologic O I-Disease
 outcome O O
 in O O
 very B-Disease B-Disease
@@ -17147,8 +17147,8 @@ long I-Disease I-Disease
 chain I-Disease I-Disease
 acyl I-Disease I-Disease
 - I-Disease I-Disease
-coenzyme I-Disease I-Disease
-A I-Disease I-Disease
+coenzyme I-Disease O
+A I-Disease O
 dehydrogenase I-Disease I-Disease
 deficiency I-Disease I-Disease
 . O O
@@ -17216,7 +17216,7 @@ hypertrophic B-Disease B-Disease
 cardiomyopathy I-Disease I-Disease
 , O O
 hepatomegaly B-Disease B-Disease
-, O I-Disease
+, O O
 encephalopathy B-Disease B-Disease
 , O O
 and O O
@@ -17242,7 +17242,7 @@ genetic O O
 analysis O O
 of O O
 her O O
-VLCAD O B-Disease
+VLCAD O O
 gene O O
 revealed O O
 a O O
@@ -17266,7 +17266,7 @@ After O O
 initial O O
 treatment O O
 with O O
-intravenous O O
+intravenous O B-Disease
 glucose O O
 and O O
 carnitine O O
@@ -17297,9 +17297,9 @@ fasting O O
 . O O
 
 Her O O
-ventricular O O
+ventricular O B-Disease
 hypertrophy O I-Disease
-resolved O O
+resolved O I-Disease
 significantly O O
 over O O
 1 O O
@@ -17374,8 +17374,8 @@ within O O
 the O O
 insulin B-Disease B-Disease
 - I-Disease I-Disease
-dependent I-Disease I-Disease
-diabetes I-Disease I-Disease
+dependent I-Disease O
+diabetes I-Disease B-Disease
 mellitus I-Disease I-Disease
 ( O O
 IDDM B-Disease B-Disease
@@ -17550,7 +17550,7 @@ conservation O O
 . O O
 
 The O O
-APC B-Disease B-Disease
+APC B-Disease O
 variants O O
 I1307K O O
 and O O
@@ -17570,7 +17570,7 @@ family O O
 history O O
 . O O
 
-Classical O O
+Classical O B-Disease
 familial B-Disease I-Disease
 adenomatous I-Disease I-Disease
 polyposis I-Disease I-Disease
@@ -17579,7 +17579,7 @@ FAP B-Disease B-Disease
 ) O O
 is O O
 a O O
-high O B-Disease
+high O O
 - O O
 penetrance O O
 autosomal B-Disease B-Disease
@@ -17614,7 +17614,7 @@ of O O
 FAP B-Disease B-Disease
 is O O
 attenuated B-Disease B-Disease
-adenomatous I-Disease I-Disease
+adenomatous I-Disease B-Disease
 polyposis I-Disease I-Disease
 coli I-Disease I-Disease
 , O O
@@ -17637,8 +17637,8 @@ APC B-Disease B-Disease
 gene O O
 . O O
 
-Attenuated B-Disease O
-adenomatous I-Disease B-Disease
+Attenuated B-Disease B-Disease
+adenomatous I-Disease I-Disease
 polyposis I-Disease I-Disease
 coli I-Disease I-Disease
 patients O O
@@ -17810,11 +17810,11 @@ unusually O O
 large O O
 number O O
 of O O
-metaplastic B-Disease B-Disease
-polyps I-Disease I-Disease
-of I-Disease I-Disease
-the I-Disease I-Disease
-colorectum I-Disease I-Disease
+metaplastic B-Disease O
+polyps I-Disease O
+of I-Disease O
+the I-Disease O
+colorectum I-Disease O
 . O O
 
 There O O
@@ -18224,8 +18224,8 @@ Risk O O
 of O O
 developing O O
 colorectal B-Disease B-Disease
-, I-Disease I-Disease
-breast I-Disease I-Disease
+, I-Disease O
+breast I-Disease B-Disease
 and I-Disease I-Disease
 other I-Disease I-Disease
 cancers I-Disease I-Disease
@@ -18439,7 +18439,7 @@ metachromatic B-Disease B-Disease
 leukodystrophy I-Disease I-Disease
 . O O
 
-Deficiency B-Disease O
+Deficiency B-Disease B-Disease
 of I-Disease I-Disease
 arylsulfatase I-Disease I-Disease
 A I-Disease O
@@ -18610,7 +18610,7 @@ Hippel I-Disease I-Disease
 - I-Disease I-Disease
 Lindau I-Disease I-Disease
 ( O O
-VHL B-Disease B-Disease
+VHL B-Disease I-Disease
 ) O O
 - O O
 mediated O O
@@ -18834,7 +18834,7 @@ mellitus I-Disease I-Disease
 and O O
 optic B-Disease B-Disease
 atrophy I-Disease I-Disease
-( O O
+( O I-Disease
 Wolfram B-Disease B-Disease
 syndrome I-Disease I-Disease
 ) O O
@@ -18899,7 +18899,7 @@ associated O O
 haplotypes O O
 , O O
 the O O
-WFS B-Disease O
+WFS B-Disease B-Disease
 gene O O
 was O O
 localized O O
@@ -18977,7 +18977,7 @@ the O O
 BRCA1 O O
 and O O
 BRCA2 O O
-tumor B-Disease I-Disease
+tumor B-Disease B-Disease
 suppressor O O
 genes O O
 in O O
@@ -19641,8 +19641,8 @@ in O O
 three O O
 unrelated O O
 Turkish O O
-A B-Disease B-Disease
-- I-Disease I-Disease
+A B-Disease O
+- I-Disease O
 T I-Disease I-Disease
 individuals O O
 , O O
@@ -19653,9 +19653,9 @@ to O O
 be O O
 a O O
 Turkish O O
-A B-Disease B-Disease
-- I-Disease I-Disease
-T I-Disease I-Disease
+A B-Disease O
+- I-Disease O
+T I-Disease O
 founder O O
 mutation O O
 . O O
@@ -19763,7 +19763,7 @@ syndrome I-Disease I-Disease
 
 Autosomal B-Disease B-Disease
 recessive I-Disease I-Disease
-Alport I-Disease I-Disease
+Alport I-Disease B-Disease
 syndrome I-Disease I-Disease
 is O O
 a O O
@@ -19772,7 +19772,7 @@ hematuric B-Disease B-Disease
 glomerulonephritis I-Disease I-Disease
 characterized O O
 by O O
-glomerular B-Disease O
+glomerular B-Disease B-Disease
 basement I-Disease B-Disease
 membrane I-Disease I-Disease
 abnormalities I-Disease I-Disease
@@ -19859,7 +19859,7 @@ diagnosed O O
 with O O
 autosomal B-Disease B-Disease
 recessive I-Disease I-Disease
-Alport I-Disease I-Disease
+Alport I-Disease B-Disease
 syndrome I-Disease I-Disease
 . O O
 
@@ -19938,10 +19938,10 @@ BRCA2 O O
 mutations O O
 in O O
 French O O
-Canadian O B-Disease
-breast B-Disease I-Disease
+Canadian O O
+breast B-Disease B-Disease
 and I-Disease I-Disease
-ovarian I-Disease I-Disease
+ovarian I-Disease B-Disease
 cancer I-Disease I-Disease
 families O O
 . O O
@@ -19956,7 +19956,7 @@ each O O
 of O O
 the O O
 breast B-Disease B-Disease
-cancer I-Disease O
+cancer I-Disease I-Disease
 - O O
 susceptibility O O
 genes O O
@@ -19968,7 +19968,7 @@ BRCA2 O O
 in O O
 French O O
 Canadian O O
-breast B-Disease O
+breast B-Disease B-Disease
 cancer I-Disease I-Disease
 and O O
 breast B-Disease B-Disease
@@ -20204,7 +20204,7 @@ detection O O
 in O O
 French O O
 Canadian O O
-breast B-Disease O
+breast B-Disease B-Disease
 cancer I-Disease I-Disease
 and O O
 breast B-Disease B-Disease
@@ -20445,7 +20445,7 @@ describe O O
 a O O
 French O O
 Canadian O O
-hereditary B-Disease B-Disease
+hereditary B-Disease I-Disease
 non I-Disease I-Disease
 - I-Disease I-Disease
 polyposis I-Disease I-Disease
@@ -20547,7 +20547,7 @@ gene O O
 in O O
 a O O
 Japanese O O
-hereditary B-Disease O
+hereditary B-Disease B-Disease
 coproporphyria I-Disease I-Disease
 family O O
 . O O
@@ -20569,8 +20569,8 @@ deficiency B-Disease B-Disease
 of I-Disease I-Disease
 coproporphyrinogen I-Disease I-Disease
 oxidase I-Disease I-Disease
-( O O
-CPO O O
+( O I-Disease
+CPO O I-Disease
 ) O O
 caused O O
 by O O
@@ -20679,9 +20679,9 @@ family O O
 . O O
 
 The O O
-C O B-Disease
-- O I-Disease
-T O I-Disease
+C O O
+- O O
+T O O
 mutation O O
 is O O
 located O O
@@ -20719,7 +20719,7 @@ TIC O O
 
 Human B-Disease O
 complement I-Disease O
-factor I-Disease O
+factor I-Disease I-Disease
 H I-Disease I-Disease
 deficiency I-Disease I-Disease
 associated O O
@@ -20737,12 +20737,12 @@ six O O
 cases O O
 of O O
 deficiency B-Disease B-Disease
-in I-Disease I-Disease
-the I-Disease I-Disease
+in I-Disease O
+the I-Disease O
 human I-Disease O
-complement I-Disease I-Disease
-regulatory I-Disease I-Disease
-protein I-Disease I-Disease
+complement I-Disease O
+regulatory I-Disease O
+protein I-Disease O
 Factor I-Disease O
 H I-Disease O
 ( O O
@@ -20754,7 +20754,7 @@ context O O
 of O O
 an O O
 acute B-Disease O
-renal I-Disease I-Disease
+renal I-Disease B-Disease
 disease I-Disease I-Disease
 . O O
 
@@ -20773,7 +20773,7 @@ hemolytic B-Disease I-Disease
 uremic I-Disease I-Disease
 syndrome I-Disease I-Disease
 ( O O
-HUS B-Disease O
+HUS B-Disease B-Disease
 ) O O
 . O O
 
@@ -20784,7 +20784,7 @@ children O O
 exhibited O O
 a O O
 homozygous O O
-deficiency O B-Disease
+deficiency O I-Disease
 characterized O O
 by O O
 the O O
@@ -20796,7 +20796,7 @@ the O O
 kD O O
 form O O
 of O O
-Factor O O
+Factor O B-Disease
 H O O
 and O O
 the O O
@@ -20845,7 +20845,7 @@ one O O
 patient O O
 with O O
 homozygous O O
-deficiency O O
+deficiency O I-Disease
 ruled O O
 out O O
 the O O
@@ -20873,7 +20873,7 @@ four O O
 children O O
 presented O O
 with O O
-heterozygous O B-Disease
+heterozygous O O
 deficiency O I-Disease
 and O O
 exhibited O O
@@ -20899,7 +20899,7 @@ complement B-Disease B-Disease
 deficiency I-Disease I-Disease
 associated O O
 with O O
-HUS B-Disease O
+HUS B-Disease B-Disease
 . O O
 
 These O O
@@ -21246,9 +21246,9 @@ molecular O O
 defects O O
 leading O O
 to O O
-total O B-Disease
-deficiency O I-Disease
-879delG O I-Disease
+total O I-Disease
+deficiency O B-Disease
+879delG O O
 , O O
 which O O
 is O O
@@ -21285,8 +21285,8 @@ that O O
 the O O
 879delG O O
 and O O
-1195delC O B-Disease
-defects O I-Disease
+1195delC O O
+defects O O
 are O O
 associated O O
 with O O
@@ -21374,7 +21374,7 @@ kindreds O O
 but O O
 the O O
 879delG O O
-defect O I-Disease
+defect O O
 in O O
 the O O
 Cape O O
@@ -21492,8 +21492,8 @@ chromosomal O O
 loci O O
 linked O O
 to O O
-mental O O
-health O O
+mental O B-Disease
+health O I-Disease
 wellness O O
 in O O
 relatives O O
@@ -21517,7 +21517,7 @@ disorder I-Disease I-Disease
 ( O O
 BPAD B-Disease B-Disease
 ; O O
-manic B-Disease O
+manic B-Disease B-Disease
 - I-Disease I-Disease
 depressive I-Disease I-Disease
 illness I-Disease O
@@ -21609,13 +21609,13 @@ disorders I-Disease I-Disease
 , O O
 we O O
 used O O
-mental O O
+mental O B-Disease
 health O O
 wellness O O
 ( O O
-absence O O
-of O O
-any O O
+absence O B-Disease
+of O I-Disease
+any O I-Disease
 psychiatric B-Disease I-Disease
 disorder I-Disease I-Disease
 ) O O
@@ -21998,14 +21998,14 @@ of O O
 hemochromatosis B-Disease B-Disease
 . O O
 
-If O B-Disease
+If O O
 untreated O O
 , O O
 hemochromatosis B-Disease B-Disease
 can O O
 cause O O
-serious O O
-illness O O
+serious O B-Disease
+illness O I-Disease
 and O O
 early B-Disease O
 death I-Disease O
@@ -22070,7 +22070,7 @@ the O O
 presence O O
 of O O
 iron B-Disease O
-overload I-Disease I-Disease
+overload I-Disease O
 . O O
 
 Liver O O
@@ -22167,8 +22167,8 @@ phlebotomy O O
 therapy O O
 can O O
 avert O O
-serious O O
-chronic O O
+serious O B-Disease
+chronic O I-Disease
 disease O I-Disease
 and O O
 can O O
@@ -22185,7 +22185,7 @@ Prevalence O O
 of O O
 the O O
 I1307K O O
-APC B-Disease B-Disease
+APC B-Disease I-Disease
 gene O O
 variant O O
 in O O
@@ -22204,7 +22204,7 @@ cancer I-Disease I-Disease
 
 BACKGROUND O O
 & O O
-AIMS O B-Disease
+AIMS O O
 Israeli O O
 Jews O O
 of O O
@@ -22412,7 +22412,7 @@ risk O O
 . O O
 
 Colorectal B-Disease O
-neoplasia I-Disease O
+neoplasia I-Disease I-Disease
 occurred O O
 personally O O
 or O O
@@ -22438,8 +22438,8 @@ or O O
 family O O
 history O O
 of O O
-noncolonic O B-Disease
-neoplasia B-Disease I-Disease
+noncolonic O O
+neoplasia B-Disease O
 . O O
 
 CONCLUSIONS O O
@@ -22454,11 +22454,11 @@ susceptibility O O
 gene O O
 for O O
 colorectal B-Disease B-Disease
-, I-Disease O
-or I-Disease O
-other I-Disease O
-, I-Disease O
-cancers I-Disease B-Disease
+, I-Disease I-Disease
+or I-Disease I-Disease
+other I-Disease I-Disease
+, I-Disease I-Disease
+cancers I-Disease I-Disease
 in O O
 Ashkenazi O O
 Jews O O
@@ -22482,8 +22482,8 @@ analysis O O
 of O O
 coproporphyrinogen O O
 oxidase O O
-gene O I-Disease
-defects O I-Disease
+gene O O
+defects O O
 in O O
 hereditary B-Disease B-Disease
 coproporphyria I-Disease I-Disease
@@ -22500,7 +22500,7 @@ HC B-Disease B-Disease
 is O O
 an O O
 acute O O
-hepatic B-Disease O
+hepatic B-Disease B-Disease
 porphyria I-Disease I-Disease
 with O O
 autosomal O O
@@ -22508,12 +22508,12 @@ dominant O O
 inheritance O O
 caused O O
 by O O
-deficient B-Disease O
+deficient B-Disease B-Disease
 activity I-Disease O
-of I-Disease O
-coproporphyrinogen I-Disease O
-III I-Disease O
-oxidase I-Disease O
+of I-Disease I-Disease
+coproporphyrinogen I-Disease I-Disease
+III I-Disease I-Disease
+oxidase I-Disease I-Disease
 ( O O
 CPO O O
 ) O O
@@ -22545,7 +22545,7 @@ changes O O
 , O O
 or O O
 infectious B-Disease O
-diseases I-Disease I-Disease
+diseases I-Disease O
 . O O
 
 Skin O O
@@ -22811,8 +22811,8 @@ delATTCTT O O
 . O O
 
 Five O O
-intragenic O O
-dimorphisms O O
+intragenic O I-Disease
+dimorphisms O I-Disease
 are O O
 now O O
 well O O
@@ -22983,7 +22983,7 @@ heterogeneity O O
 
 The O O
 late O O
-infantile O B-Disease
+infantile O O
 patient O O
 inherited O O
 from O O
@@ -23103,7 +23103,7 @@ clearly O O
 modifying O O
 ARSA O O
 and O O
-GS O O
+GS O B-Disease
 levels O O
 , O O
 apparently O O
@@ -23133,8 +23133,8 @@ certain O O
 genetic O O
 conditions O O
 MLD B-Disease B-Disease
-- O O
-like O O
+- O I-Disease
+like O I-Disease
 ARSA O I-Disease
 and O O
 GS O B-Disease
@@ -23195,7 +23195,7 @@ disease O O
 . O O
 . O O
 
-Human O O
+Human O B-Disease
 MLH1 O B-Disease
 deficiency O I-Disease
 predisposes O O
@@ -23205,7 +23205,7 @@ malignancy I-Disease I-Disease
 and O O
 neurofibromatosis B-Disease B-Disease
 type I-Disease I-Disease
-1 I-Disease O
+1 I-Disease I-Disease
 . O O
 
 Heterozygous O O
@@ -23252,7 +23252,7 @@ offspring O O
 in O O
 a O O
 hereditary B-Disease B-Disease
-nonpolyposis I-Disease I-Disease
+nonpolyposis I-Disease B-Disease
 colorectal I-Disease I-Disease
 cancer I-Disease I-Disease
 family O O
@@ -23276,7 +23276,7 @@ displayed O O
 signs O O
 of O O
 neurofibromatosis B-Disease B-Disease
-type I-Disease I-Disease
+type I-Disease O
 1 I-Disease O
 ( O O
 NF1 B-Disease O
@@ -23319,7 +23319,7 @@ MLH1 O O
 mutation O O
 and O O
 consequent O O
-mismatch O O
+mismatch O B-Disease
 repair O I-Disease
 deficiency O I-Disease
 results O O
@@ -23330,15 +23330,15 @@ phenotype O O
 characterized O O
 by O O
 leukemia B-Disease B-Disease
-and O O
-/ O O
-or O O
-lymphoma B-Disease B-Disease
+and O I-Disease
+/ O I-Disease
+or O I-Disease
+lymphoma B-Disease I-Disease
 associated O O
 with O O
 neurofibromatosis B-Disease B-Disease
 type I-Disease I-Disease
-1 I-Disease O
+1 I-Disease I-Disease
 . O O
 . O O
 
@@ -23368,9 +23368,9 @@ Mutations O O
 of O O
 the O O
 human O O
-PAX6 O O
+PAX6 O B-Disease
 gene O O
-underlie O I-Disease
+underlie O O
 aniridia B-Disease B-Disease
 ( O O
 congenital B-Disease B-Disease
@@ -23455,7 +23455,7 @@ amino O O
 acid O O
 level O O
 amongst O O
-vertebrates O B-Disease
+vertebrates O O
 predicts O O
 that O O
 pathological O O
@@ -23528,18 +23528,18 @@ association O O
 with O O
 atypical O O
 phenotypes O O
-ectopia B-Disease O
-pupillae I-Disease O
+ectopia B-Disease B-Disease
+pupillae I-Disease I-Disease
 ( O O
 displaced B-Disease O
 pupils I-Disease O
 ) O O
 and O O
-congenital B-Disease O
-nystagmus I-Disease O
+congenital B-Disease B-Disease
+nystagmus I-Disease I-Disease
 ( O O
 searching B-Disease O
-gaze I-Disease O
+gaze I-Disease I-Disease
 ) O O
 , O O
 and O O
@@ -23655,9 +23655,9 @@ those O O
 coding O O
 for O O
 properdin O O
-Factor O O
-B O O
-allotypes O O
+Factor O B-Disease
+B O I-Disease
+allotypes O I-Disease
 and O O
 for O O
 deficiency B-Disease B-Disease
@@ -23754,8 +23754,8 @@ between O O
 C2 B-Disease B-Disease
 deficiency I-Disease I-Disease
 and O O
-HLA O O
-- O O
+HLA O B-Disease
+- O I-Disease
 B O I-Disease
 at O O
 a O O
@@ -23883,9 +23883,9 @@ that O O
 the O O
 genes O O
 for O O
-Factor O O
-B O O
-and O O
+Factor O B-Disease
+B O I-Disease
+and O I-Disease
 C2 B-Disease B-Disease
 deficiency I-Disease I-Disease
 are O O
@@ -23927,7 +23927,7 @@ C2 B-Disease B-Disease
 deficiency I-Disease I-Disease
 and O O
 Factor O O
-B O I-Disease
+B O O
 allotypes O O
 are O O
 approximately O O
@@ -23956,9 +23956,9 @@ of O O
 recombinants O O
 between O O
 the O O
-Factor O O
-B O O
-gene O O
+Factor O B-Disease
+B O I-Disease
+gene O I-Disease
 and O O
 C2 B-Disease B-Disease
 deficiency I-Disease I-Disease
@@ -24352,10 +24352,10 @@ region O O
 p16 O O
 . O O
 
-Abnormal O O
-hepatic B-Disease O
-copper I-Disease O
-accumulation I-Disease O
+Abnormal O B-Disease
+hepatic B-Disease I-Disease
+copper I-Disease I-Disease
+accumulation I-Disease I-Disease
 is O O
 recognized O O
 as O O
@@ -24376,9 +24376,9 @@ The O O
 major O O
 cause O O
 of O O
-hepatic B-Disease O
-copper I-Disease O
-accumulation I-Disease O
+hepatic B-Disease B-Disease
+copper I-Disease I-Disease
+accumulation I-Disease I-Disease
 in O O
 man O O
 is O O
@@ -24424,11 +24424,11 @@ human O O
 copper B-Disease B-Disease
 overload I-Disease I-Disease
 disease O I-Disease
-non B-Disease O
+non B-Disease I-Disease
 - I-Disease I-Disease
 Indian I-Disease I-Disease
-childhood I-Disease O
-cirrhosis I-Disease B-Disease
+childhood I-Disease I-Disease
+cirrhosis I-Disease I-Disease
 , O O
 indicating O O
 genetic O O
@@ -24439,16 +24439,16 @@ By O O
 investigating O O
 the O O
 common O O
-autosomal O O
+autosomal O B-Disease
 recessive O O
-copper B-Disease I-Disease
+copper B-Disease O
 toxicosis I-Disease I-Disease
 ( O O
 CT B-Disease O
 ) O O
 in O O
 Bedlington O O
-terriers O O
+terriers O I-Disease
 , O O
 we O O
 have O O
@@ -24459,7 +24459,7 @@ locus O O
 involved O O
 in O O
 progressive O O
-liver B-Disease B-Disease
+liver B-Disease I-Disease
 disease I-Disease I-Disease
 . O O
 
@@ -24644,7 +24644,7 @@ predisposition O O
 
 BACKGROUND O O
 / O O
-AIMS O B-Disease
+AIMS O O
 The O O
 development O O
 of O O
@@ -24716,8 +24716,8 @@ mutations O O
 in O O
 non O B-Disease
 - O I-Disease
-FAP O O
-colorectal B-Disease B-Disease
+FAP O B-Disease
+colorectal B-Disease I-Disease
 cancer I-Disease I-Disease
 . O O
 
@@ -24882,7 +24882,7 @@ FAP B-Disease B-Disease
 and O O
 non O B-Disease
 - O I-Disease
-FAP O O
+FAP O I-Disease
 colorectal B-Disease I-Disease
 cancer I-Disease I-Disease
 patients O O
@@ -24927,7 +24927,7 @@ polyposis I-Disease I-Disease
 syndrome I-Disease I-Disease
 and O O
 sporadic O O
-colorectal O I-Disease
+colorectal O B-Disease
 carcinogenesis O I-Disease
 , O O
 respectively O O
@@ -24979,7 +24979,7 @@ APC B-Disease B-Disease
 allelic O O
 variant O O
 in O O
-colorectal O O
+colorectal O B-Disease
 carcinogenesis O O
 , O O
 we O O
@@ -25061,8 +25061,8 @@ of O O
 
 7 O O
 for O O
-colorectal B-Disease O
-neoplasia I-Disease O
+colorectal B-Disease B-Disease
+neoplasia I-Disease I-Disease
 ( O O
 both O O
 P O O
@@ -25118,7 +25118,7 @@ variant O O
 leads O O
 to O O
 increased O O
-adenoma B-Disease O
+adenoma B-Disease B-Disease
 formation O O
 and O O
 directly O O
@@ -25210,9 +25210,9 @@ link O O
 between O O
 the O O
 BRCA1 O O
-tumour B-Disease B-Disease
+tumour B-Disease I-Disease
 - O O
-suppressor O I-Disease
+suppressor O O
 gene O O
 and O O
 hereditary B-Disease B-Disease
@@ -25234,7 +25234,7 @@ BRCA1 O O
 in O O
 non B-Disease B-Disease
 - I-Disease I-Disease
-familial I-Disease I-Disease
+familial I-Disease O
 cancers I-Disease I-Disease
 is O O
 unclear O O
@@ -25384,13 +25384,13 @@ in O O
 benign O B-Disease
 breast O I-Disease
 , O O
-invasive B-Disease I-Disease
+invasive B-Disease B-Disease
 lobular I-Disease I-Disease
 cancers I-Disease I-Disease
 and O O
 low B-Disease B-Disease
-- I-Disease O
-grade I-Disease O
+- I-Disease I-Disease
+grade I-Disease I-Disease
 ductal I-Disease I-Disease
 carcinomas I-Disease I-Disease
 . O O

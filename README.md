@@ -28,6 +28,12 @@
 - Use [Glove embeddings](http://nlp.stanford.edu/data/glove.6B.zip) with 300 dimension
 - Download and place the embedding file in /embeddings
 
+## DataLoader
+
+Created data_loader.py script to batchwise feed data features into model
+
+![](images/data_loader.png)
+
 ## Usage
 
 Training 
@@ -39,15 +45,31 @@ $ python3 main.py --train
 Evaluation
 
 ```bash
-$ python3 main.py --train 
+$ python3 main.py --eval
 ```
 
 - **Evaluation prediction result** will be saved in `preds` dir
+- **Model Hyperparameters** can be altered in main.py
 
 ## Results
+
+Results after 15 epochs
 
 |                            | F1 (%) |
 | -------------------------- | ----------- |
 | Eval                       | 82.60       |
 | Test                       | 79.6        |
+
+Eval Set
+
+![](images/devel_metrics.png)
+
+Test Set
+
+![](images/test_metrics.png)
+
+Loss
+
+![](images/loss.png)
+
 
